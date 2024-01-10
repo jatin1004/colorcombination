@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Neue Haas Grotesk Text Pro" ;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width:100%;
+
+}
+#home{
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+    position: relative  ;
+}
+#home img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
+#overlay{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0; 
+    overflow: hidden;
+}
+#home #circle{
+    position: absolute;
+    width:70vw;
+    height:70vw;
+    /* background-color: #fff; */
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+#circle img{
+    width:100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+#circle #top{
+    position: absolute;
+    height:100%;
+    width:100%;  
+}
+#top img{
+    transform: translate(-50%,-50%) rotate(-180deg);
+}
+#top img:nth-child(1){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(2);
+}
+#top img:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1.5);
+}
+#top img:nth-child(3){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1);
+}
+#circle #btm{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+#btm img:nth-child(1){
+    transform: translate(-50%,-50%) scale(2);
+}
+#btm img:nth-child(2){
+    transform: translate(-50%,-50%) scale(1.5);
+}
+#btm img:nth-child(3){
+    transform: translate(-50%,-50%) scale(1);
+}
+#smcircle{
+    width:45vw;
+    height:45vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 50%;
+}
+#home #nav, #second #nav{
+    position: absolute;
+    z-index:99;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.2vw 1.4vw;
+    text-transform: uppercase;
+
+}
+#nav h1{
+    font-size:1.1vw;
+}
+#home #btmnav, #second #btmnav{
+    position: absolute;
+    z-index:99;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.2vw 1.4vw;
+    bottom:0;
+
+}
+#btmnav img{
+    width:100px;
+}
+#centerimg{
+    position: absolute;
+    width:30vw;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:999;
+}
+#centerimg h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+#centerimg #cimg{
+    position: relative;
+    width:100%;
+    height:250px;
+    overflow:hidden;
+}
+#cimg img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+#second{
+    position: relative;
+    width:100%;
+    height:100vh;
+
+}
+#overlay>h1#gal{
+    position: absolute;
+    bottom:0;
+    z-index:999;
+    font-size:10vw;
+    font-weight: 300;
+    left:50%;
+    transform: translate(-50%,-10%);
+    pointer-events: none;
+}
+#gola{
+    position: absolute;
+    top:150%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #d5a7b4;
+    border-radius: 50%;
+    width:5vw;
+    height:5vw;
+    z-index:9999;
+}
+#overlay>h1#pf{
+    position: absolute;
+    bottom:-50%;
+    z-index:999;
+    font-size:10vw;
+    font-weight: 300;
+    left:50%;
+    transform: translate(-50%,-10%) rotate(30deg);
+    transform-origin: 0% 50%;
+    pointer-events: none;
+    color:#fff;
+}
+#pinkpart{
+    width:30vw;
+    padding:2vw 3vw;
+    background-color: #d5a7b4;
+    position: absolute;
+    top:150%;
+    left:0;
+
+}
+#stop{
+    position: relative;
+    overflow:hidden;
+    width:100%;
+    height:70%;
+    border:1px solid #dadada;
+}
+#sbtm{
+    position: relative;
+    width:100%;
+    height: 30%;
+}
+.circle{
+    position: absolute;
+    top:150%;
+    transform: translate(-50%,-50%);
+    width:14vw;
+    height:14vw;
+    border-radius: 50%;
+}
+#stop .pu{
+    left:45%;
+    background-color: #b4aad5;
+}
+#stop .pi{
+    left:55%;
+    background:linear-gradient(to right, #d5a7b4, #d5a7b4);
+    /* background-color: #d5a7b4; */
+}
+#sbtm p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+}
+#sbtm p:nth-child(2){
+    opacity: 0;
+}
+#stop h1{
+    position: absolute;
+    bottom:0;
+    line-height: 1;
+    left:100%;
+    font-size:22vw;
+    font-weight: 100;
+    text-transform: uppercase ;
+    z-index: 9999;
+    color:#fff;
+}
+#dabbe{
+    position: relative;
+    display: flex;
+    width:100%;
+    height:100%;
+    z-index:999999;
+}
+#done{
+    position: absolute;
+    width:20%;
+    height: 100%;
+    top:100%;
+    left:0%;
+    background-color: #dfb1be;
+}
+#dtwo{
+    position: absolute;
+    width:20%;
+    height: 100%;
+    top:100%;
+    left:20%;
+    background-color: #e9bbc8;
+}
+#dthree{
+    position: absolute;
+    width:20%;
+    height: 100%;
+    top:100%;
+    left:40%;
+    background-color: #f3c5d2;
+}
+#dfour{
+    position: absolute;
+    width:20%;
+    height: 100%;
+    top:100%;
+    left:60%;
+    background-color: #fdcfdc;
+}
+#dfive{
+    position: absolute;
+    width:20%;
+    height: 100%;
+    top:100%;
+    left:80%;
+    background-color: #ffe3f0;
+}
+@media(max-width:500px){
+    #home #nav, #second #nav{
+        padding:20px;
+    }
+    #home #btmnav, #second #btmnav{
+        padding:5px 15px;
+    }
+    #nav h1{
+        font-size:4vw;
+    }
+    #centerimg{
+        width:80vw;
+    }
+    #centerimg #cimg{
+        height:180px;
+    }
+    #centerimg h5{
+        margin-bottom:5px;
+    }
+    #pinkpart{
+        width:80vw;
+    }
+    #overlay>h1#gal{
+        bottom:12%;
+        font-weight:900;
+        font-size:14vw;
+    }
+    #overlay>h1#pf{
+        font-size: 14vw;
+        font-weight: 900;
+    }
+    #gola{
+        width:25vw;
+        height:25vw;
+    }
+    #smcircle{
+        width:95vw;
+        height:95vw;
+    }
+    #home #circle{
+        width:150vw;
+        height:150vw;
+    }
+    #sbtm p{
+        font-size:5vw;
+        width:90%;
+    }
+    .circle{
+        width: 34vw;
+        height:34vw;
+    }
+    #stop h1{
+        font-size:55vw;
+    }
+
+}
